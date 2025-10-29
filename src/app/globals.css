@@ -1,2 +1,69 @@
 @import "tailwindcss";
 
+:root {
+  --current: currentColor;
+  --bl-c-transparent: transparent;
+  --bl-c-white: oklch(0.98 0 0 / 1);
+
+  --bl-c-primary: oklch(0.59 0.19 254.77 / 1);
+  --bl-c-secondary: oklch(0.57 0.2 283.08 / 1);
+  --bl-c-accent: oklch(0.69 0.12 185.39 / 1);
+  --bl-c-neutral: oklch(0.31 0.02 254.14 / 1);
+
+  --bl-c-info: oklch(0.76 0.14 231.62 / 1);
+  --bl-c-success: oklch(0.77 0.15 163.1 / 1);
+  --bl-c-warning: oklch(0.83 0.16 83.42 / 1);
+  --bl-c-error: oklch(0.71 0.16 22.15 / 1);
+
+  --bl-c-gradient-first: oklch(0.83 0.18 160.17 / 1);
+  --bl-c-gradient-second: oklch(0.68 0.15 238.98 / 1);
+
+  --bl-c-primary-focus: color-mix(in oklch, var(--bl-c-primary), black 7%);
+  --bl-c-primary-content: color-mix(in oklch, var(--bl-c-primary), white 80%);
+  --bl-c-secondary-focus: color-mix(in oklch, var(--bl-c-secondary), black 7%);
+  --bl-c-secondary-content: color-mix(
+    in oklch,
+    var(--bl-c-secondary),
+    white 80%
+  );
+  --bl-c-accent-focus: color-mix(in oklch, var(--bl-c-accent), black 7%);
+  --bl-c-accent-content: color-mix(in oklch, var(--bl-c-accent), white 80%);
+  --bl-c-neutral-focus: color-mix(in oklch, var(--bl-c-neutral), black 3%);
+  --bl-c-neutral-content: color-mix(in oklch, var(--bl-c-neutral), white 80%);
+  --bl-c-info-content: color-mix(in oklch, var(--bl-c-info), black 80%);
+  --bl-c-success-content: color-mix(in oklch, var(--bl-c-success), black 80%);
+  --bl-c-warning-content: color-mix(in oklch, var(--bl-c-warning), black 80%);
+  --bl-c-error-content: color-mix(in oklch, var(--bl-c-error), black 80%);
+}
+
+@theme {
+  /* remove all color */
+  --color-*: initial;
+
+  /* set color */
+  --color-current: var(--current);
+  --color-transparent: var(--bl-c-transparent);
+  --color-white: var(--bl-c-white);
+  --color-primary: var(--bl-c-primary);
+  --color-primary-content: var(--bl-c-primary-content);
+  --color-primary-focus: var(--bl-c-primary-focus);
+  --color-secondary: var(--bl-c-secondary);
+  --color-secondary-content: var(--bl-c-secondary-content);
+  --color-secondary-focus: var(--bl-c-secondary-focus);
+  --color-accent: var(--bl-c-accent);
+  --color-accent-content: var(--bl-c-accent-content);
+  --color-accent-focus: var(--bl-c-accent-focus);
+  --color-neutral: var(--bl-c-neutral);
+  --color-neutral-content: var(--bl-c-neutral-content);
+  --color-neutral-focus: var(--bl-c-neutral-focus);
+  --color-info: var(--bl-c-info);
+  --color-info-content: var(--bl-c-info-content);
+  --color-success: var(--bl-c-success);
+  --color-success-content: var(--bl-c-success-content);
+  --color-warning: var(--bl-c-warning);
+  --color-warning-content: var(--bl-c-warning-content);
+  --color-error: var(--bl-c-error);
+  --color-error-content: var(--bl-c-error-content);
+  --color-gradient-first: var(--bl-c-gradient-first);
+  --color-gradient-second: var(--bl-c-gradient-second);
+}
