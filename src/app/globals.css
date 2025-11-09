@@ -67,3 +67,13 @@
   --color-gradient-first: var(--bl-c-gradient-first);
   --color-gradient-second: var(--bl-c-gradient-second);
 }
+
+@layer base {
+  body {
+    font-family: var(--font-bnazanin);
+  }
+
+  :lang(en) {
+    font-family: var(--font-figtree);
+  }
+}
